@@ -1,0 +1,22 @@
+language: python
+python:
+  - 3.6
+  - 3.5
+  - 3.3
+  - 2.7
+
+install:
+  - pip install --upgrade tox-travis
+
+script: tox
+
+deploy:
+  provider: pypi
+  user: flyte
+  distributions: sdist bdist_wheel
+  password:
+    secure: PLEASE_REPLACE_ME
+  on:
+    tags: true
+    repo: flyte/{{ cookiecutter.project_slug|replace('_', '-') }}
+    python: 2.7

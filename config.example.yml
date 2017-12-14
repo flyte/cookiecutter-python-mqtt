@@ -1,0 +1,3 @@
+mqtt:
+  host: test.mosquitto.org
+  topic_prefix: {{ cookiecutter.project_slug }}/test
