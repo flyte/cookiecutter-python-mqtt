@@ -13,6 +13,6 @@ def remove_file(filepath):
 
 if __name__ == '__main__':
     args = object()
-    args.repo = "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug|replace('_', '-') }}"
+    args.repo = "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug.replace('_', '-') }}"
     setup_pypi_travis(args)
     remove_file('travis_pypi_setup.py')

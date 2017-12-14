@@ -1,0 +1,6 @@
+{
+    "github_username": "flyte",
+    "project_name": "Python MQTT Boilerplate",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "version": "0.0.1"
+}

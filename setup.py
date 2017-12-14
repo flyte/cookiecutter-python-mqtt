@@ -1,6 +1,6 @@
 #  -*- coding: utf-8 -*-
 """
-Setuptools script for the {{ cookiecutter.project_slug|replace('_', '-') }} project.
+Setuptools script for the {{ cookiecutter.project_slug.replace('_', '-') }} project.
 """
 import os
 
@@ -23,7 +23,7 @@ def required(fname):
 
 
 setup(
-    name="{{ cookiecutter.project_slug|replace('_', '-') }}",
+    name="{{ cookiecutter.project_slug.replace('_', '-') }}",
     version="{{ cookiecutter.version }}",
     packages=find_packages(),
     scripts=[],
