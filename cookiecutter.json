@@ -3,5 +3,6 @@
     "project_name": "Python MQTT Boilerplate",
     "project_short_description": "MQTT client daemon",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_dir": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "version": "0.0.1"
 }
